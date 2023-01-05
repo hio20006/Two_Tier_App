@@ -82,6 +82,21 @@
             this.function_4 = new M11105506_two_tier.Function_4();
             this.listComboBox1 = new System.Windows.Forms.ComboBox();
             this.listBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
+            this.minToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.minToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.maxToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.maxToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.listToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.listToolStripTextBox = new System.Windows.Forms.ToolStripComboBox();
+            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.listDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.systemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rankDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataTable1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.function_5 = new M11105506_two_tier.Function_5();
             this.siteinfo2siteinfo3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.siteinfo1siteinfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listsiteinfo1BindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -105,6 +120,12 @@
             this.list_1TableAdapter = new M11105506_two_tier.Function_4TableAdapters.List_1TableAdapter();
             this.site_info_2TableAdapter = new M11105506_two_tier.Function_4TableAdapters.site_info_2TableAdapter();
             this.site_info_3TableAdapter = new M11105506_two_tier.Function_4TableAdapters.site_info_3TableAdapter();
+            this.dataTable1TableAdapter1 = new M11105506_two_tier.Function_5TableAdapters.DataTable1TableAdapter();
+            this.function_51 = new M11105506_two_tier.Function_5();
+            this.listBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.listTableAdapter2 = new M11105506_two_tier.Function_5TableAdapters.ListTableAdapter();
+            this.listBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
+            this.label5 = new System.Windows.Forms.Label();
             listLabel = new System.Windows.Forms.Label();
             systemIDLabel = new System.Windows.Forms.Label();
             listLabel1 = new System.Windows.Forms.Label();
@@ -135,6 +156,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.site_infoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.function_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource5)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.fillByToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.function_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.siteinfo2siteinfo3BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.siteinfo1siteinfoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listsiteinfo1BindingSource)).BeginInit();
@@ -146,6 +172,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.siteinfoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.function_51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource8)).BeginInit();
             this.SuspendLayout();
             // 
             // listLabel
@@ -198,6 +227,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -612,6 +642,130 @@
             // 
             this.listBindingSource5.DataSource = this.function_4;
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label5);
+            this.tabPage5.Controls.Add(this.fillByToolStrip);
+            this.tabPage5.Controls.Add(this.dataGridView1);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(792, 424);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = " Fun_5";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // fillByToolStrip
+            // 
+            this.fillByToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.minToolStripLabel,
+            this.minToolStripTextBox,
+            this.maxToolStripLabel,
+            this.maxToolStripTextBox,
+            this.listToolStripLabel,
+            this.listToolStripTextBox,
+            this.fillByToolStripButton});
+            this.fillByToolStrip.Location = new System.Drawing.Point(3, 26);
+            this.fillByToolStrip.Name = "fillByToolStrip";
+            this.fillByToolStrip.Size = new System.Drawing.Size(447, 25);
+            this.fillByToolStrip.TabIndex = 1;
+            this.fillByToolStrip.Text = "fillByToolStrip";
+            // 
+            // minToolStripLabel
+            // 
+            this.minToolStripLabel.Name = "minToolStripLabel";
+            this.minToolStripLabel.Size = new System.Drawing.Size(31, 22);
+            this.minToolStripLabel.Text = "min:";
+            // 
+            // minToolStripTextBox
+            // 
+            this.minToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.minToolStripTextBox.Name = "minToolStripTextBox";
+            this.minToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // maxToolStripLabel
+            // 
+            this.maxToolStripLabel.Name = "maxToolStripLabel";
+            this.maxToolStripLabel.Size = new System.Drawing.Size(34, 22);
+            this.maxToolStripLabel.Text = "max:";
+            // 
+            // maxToolStripTextBox
+            // 
+            this.maxToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.maxToolStripTextBox.Name = "maxToolStripTextBox";
+            this.maxToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // listToolStripLabel
+            // 
+            this.listToolStripLabel.Name = "listToolStripLabel";
+            this.listToolStripLabel.Size = new System.Drawing.Size(25, 22);
+            this.listToolStripLabel.Text = "list:";
+            // 
+            // listToolStripTextBox
+            // 
+            this.listToolStripTextBox.Items.AddRange(new object[] {
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"});
+            this.listToolStripTextBox.Name = "listToolStripTextBox";
+            this.listToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillByToolStripButton
+            // 
+            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillByToolStripButton.Name = "fillByToolStripButton";
+            this.fillByToolStripButton.Size = new System.Drawing.Size(39, 22);
+            this.fillByToolStripButton.Text = "FillBy";
+            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.listDataGridViewTextBoxColumn,
+            this.systemIDDataGridViewTextBoxColumn,
+            this.rankDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.dataTable1BindingSource1;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 54);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(786, 367);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // listDataGridViewTextBoxColumn
+            // 
+            this.listDataGridViewTextBoxColumn.DataPropertyName = "List";
+            this.listDataGridViewTextBoxColumn.HeaderText = "List";
+            this.listDataGridViewTextBoxColumn.Name = "listDataGridViewTextBoxColumn";
+            // 
+            // systemIDDataGridViewTextBoxColumn
+            // 
+            this.systemIDDataGridViewTextBoxColumn.DataPropertyName = "SystemID";
+            this.systemIDDataGridViewTextBoxColumn.HeaderText = "SystemID";
+            this.systemIDDataGridViewTextBoxColumn.Name = "systemIDDataGridViewTextBoxColumn";
+            // 
+            // rankDataGridViewTextBoxColumn
+            // 
+            this.rankDataGridViewTextBoxColumn.DataPropertyName = "Rank";
+            this.rankDataGridViewTextBoxColumn.HeaderText = "Rank";
+            this.rankDataGridViewTextBoxColumn.Name = "rankDataGridViewTextBoxColumn";
+            // 
+            // dataTable1BindingSource1
+            // 
+            this.dataTable1BindingSource1.DataMember = "DataTable1";
+            this.dataTable1BindingSource1.DataSource = this.function_5;
+            // 
+            // function_5
+            // 
+            this.function_5.DataSetName = "Function_5";
+            this.function_5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // siteinfo2siteinfo3BindingSource
             // 
             this.siteinfo2siteinfo3BindingSource.DataMember = "site_info_2_site_info_3";
@@ -723,6 +877,42 @@
             // 
             this.site_info_3TableAdapter.ClearBeforeFill = true;
             // 
+            // dataTable1TableAdapter1
+            // 
+            this.dataTable1TableAdapter1.ClearBeforeFill = true;
+            // 
+            // function_51
+            // 
+            this.function_51.DataSetName = "Function_5";
+            this.function_51.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // listBindingSource7
+            // 
+            this.listBindingSource7.DataMember = "List";
+            this.listBindingSource7.DataSource = this.function_51;
+            // 
+            // listTableAdapter2
+            // 
+            this.listTableAdapter2.ClearBeforeFill = true;
+            // 
+            // listBindingSource8
+            // 
+            this.listBindingSource8.DataMember = "List";
+            this.listBindingSource8.DataSource = this.function_51;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(8, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(775, 23);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Function_5:Select a list and search computers with Rank in a range (specify min. " +
+    "and max.).\r\n";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -762,17 +952,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.site_infoBindingSource)).EndInit();
             //((System.ComponentModel.ISupportInitialize)(this.function_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource5)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.fillByToolStrip.ResumeLayout(false);
+            this.fillByToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.function_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.siteinfo2siteinfo3BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.siteinfo1siteinfoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listsiteinfo1BindingSource)).EndInit();
             //((System.ComponentModel.ISupportInitialize)(this.listBindingSource6)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.siteinfo1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.siteinfo1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.siteinfoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.function_51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -851,6 +1051,27 @@
         private Function_4TableAdapters.site_info_3TableAdapter site_info_3TableAdapter;
         private System.Windows.Forms.BindingSource siteinfo2siteinfo3BindingSource1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private Function_5 function_5;
+        private System.Windows.Forms.BindingSource dataTable1BindingSource1;
+        private Function_5TableAdapters.DataTable1TableAdapter dataTable1TableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn listDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ToolStrip fillByToolStrip;
+        private System.Windows.Forms.ToolStripLabel minToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox minToolStripTextBox;
+        private System.Windows.Forms.ToolStripLabel maxToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox maxToolStripTextBox;
+        private System.Windows.Forms.ToolStripLabel listToolStripLabel;
+        private System.Windows.Forms.ToolStripButton fillByToolStripButton;
+        private System.Windows.Forms.ToolStripComboBox listToolStripTextBox;
+        private Function_5 function_51;
+        private System.Windows.Forms.BindingSource listBindingSource7;
+        private Function_5TableAdapters.ListTableAdapter listTableAdapter2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn systemIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rankDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource listBindingSource8;
+        private System.Windows.Forms.Label label5;
     }
 }
 

@@ -19,6 +19,10 @@ namespace M11105506_two_tier
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'function_51.List' 資料表。您可以視需要進行移動或移除。
+            this.listTableAdapter2.Fill(this.function_51.List);
+            // TODO: 這行程式碼會將資料載入 'function_5.DataTable1' 資料表。您可以視需要進行移動或移除。
+            this.dataTable1TableAdapter1.Fill(this.function_5.DataTable1);
             // TODO: 這行程式碼會將資料載入 'function_41.site_info_3' 資料表。您可以視需要進行移動或移除。
             this.site_info_3TableAdapter.Fill(this.function_41.site_info_3);
             // TODO: 這行程式碼會將資料載入 'function_41.site_info_2' 資料表。您可以視需要進行移動或移除。
@@ -52,6 +56,32 @@ namespace M11105506_two_tier
 
         private void label3_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.dataTable1TableAdapter1.FillBy(this.function_5.DataTable1, new System.Nullable<int>(((int)(System.Convert.ChangeType(minToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(maxToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(listToolStripTextBox.Text, typeof(int))))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillByToolStripButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //this.dataTable1TableAdapter1.FillBy(this.function_5.DataTable1, new System.Nullable<int>(((int)(System.Convert.ChangeType(minToolStripTextBox1.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(maxToolStripTextBox1.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(listToolStripTextBox1.Text, typeof(int))))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
 
         }
     }
