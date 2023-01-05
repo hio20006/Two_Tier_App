@@ -113,6 +113,11 @@
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.systeminfo1systeminfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.fillBy2ToolStrip = new System.Windows.Forms.ToolStrip();
+            this.computer1ToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.computer1ToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillBy2ToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.system_infoDataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -150,11 +155,6 @@
             this.system_info1TableAdapter = new M11105506_two_tier.Function_6TableAdapters.system_info1TableAdapter();
             this.system_infoTableAdapter3 = new M11105506_two_tier.Function_7TableAdapters.system_infoTableAdapter();
             this.tableAdapterManager6 = new M11105506_two_tier.Function_7TableAdapters.TableAdapterManager();
-            this.fillBy2ToolStrip = new System.Windows.Forms.ToolStrip();
-            this.computer1ToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.computer1ToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.fillBy2ToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.label7 = new System.Windows.Forms.Label();
             listLabel = new System.Windows.Forms.Label();
             systemIDLabel = new System.Windows.Forms.Label();
             listLabel1 = new System.Windows.Forms.Label();
@@ -195,6 +195,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.system_infoDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systeminfo1systeminfoBindingSource)).BeginInit();
             this.tabPage7.SuspendLayout();
+            this.fillBy2ToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoDataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoBindingSource4)).BeginInit();
@@ -205,7 +206,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.site_infoBindingSource)).BeginInit();
-            this.fillBy2ToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // listLabel
@@ -948,6 +948,50 @@
             this.tabPage7.Text = "Fun_7";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(3, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(194, 23);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Function_7：Other_2";
+            // 
+            // fillBy2ToolStrip
+            // 
+            this.fillBy2ToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillBy2ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.computer1ToolStripLabel,
+            this.computer1ToolStripTextBox,
+            this.fillBy2ToolStripButton});
+            this.fillBy2ToolStrip.Location = new System.Drawing.Point(5, 52);
+            this.fillBy2ToolStrip.Name = "fillBy2ToolStrip";
+            this.fillBy2ToolStrip.Size = new System.Drawing.Size(229, 25);
+            this.fillBy2ToolStrip.TabIndex = 1;
+            this.fillBy2ToolStrip.Text = "fillBy2ToolStrip";
+            // 
+            // computer1ToolStripLabel
+            // 
+            this.computer1ToolStripLabel.Name = "computer1ToolStripLabel";
+            this.computer1ToolStripLabel.Size = new System.Drawing.Size(76, 22);
+            this.computer1ToolStripLabel.Text = "Computer：";
+            // 
+            // computer1ToolStripTextBox
+            // 
+            this.computer1ToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.computer1ToolStripTextBox.Name = "computer1ToolStripTextBox";
+            this.computer1ToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillBy2ToolStripButton
+            // 
+            this.fillBy2ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillBy2ToolStripButton.Name = "fillBy2ToolStripButton";
+            this.fillBy2ToolStripButton.Size = new System.Drawing.Size(39, 22);
+            this.fillBy2ToolStripButton.Text = "FillBy";
+            this.fillBy2ToolStripButton.Click += new System.EventHandler(this.fillBy2ToolStripButton_Click);
+            // 
             // system_infoDataGridView2
             // 
             this.system_infoDataGridView2.AutoGenerateColumns = false;
@@ -1152,50 +1196,6 @@
             this.tableAdapterManager6.system_infoTableAdapter = this.system_infoTableAdapter3;
             this.tableAdapterManager6.UpdateOrder = M11105506_two_tier.Function_7TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // fillBy2ToolStrip
-            // 
-            this.fillBy2ToolStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.fillBy2ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.computer1ToolStripLabel,
-            this.computer1ToolStripTextBox,
-            this.fillBy2ToolStripButton});
-            this.fillBy2ToolStrip.Location = new System.Drawing.Point(5, 52);
-            this.fillBy2ToolStrip.Name = "fillBy2ToolStrip";
-            this.fillBy2ToolStrip.Size = new System.Drawing.Size(229, 25);
-            this.fillBy2ToolStrip.TabIndex = 1;
-            this.fillBy2ToolStrip.Text = "fillBy2ToolStrip";
-            // 
-            // computer1ToolStripLabel
-            // 
-            this.computer1ToolStripLabel.Name = "computer1ToolStripLabel";
-            this.computer1ToolStripLabel.Size = new System.Drawing.Size(76, 22);
-            this.computer1ToolStripLabel.Text = "Computer：";
-            // 
-            // computer1ToolStripTextBox
-            // 
-            this.computer1ToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
-            this.computer1ToolStripTextBox.Name = "computer1ToolStripTextBox";
-            this.computer1ToolStripTextBox.Size = new System.Drawing.Size(100, 25);
-            // 
-            // fillBy2ToolStripButton
-            // 
-            this.fillBy2ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillBy2ToolStripButton.Name = "fillBy2ToolStripButton";
-            this.fillBy2ToolStripButton.Size = new System.Drawing.Size(39, 22);
-            this.fillBy2ToolStripButton.Text = "FillBy";
-            this.fillBy2ToolStripButton.Click += new System.EventHandler(this.fillBy2ToolStripButton_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(3, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(194, 23);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Function_7：Other_2";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1248,6 +1248,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.systeminfo1systeminfoBindingSource)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            this.fillBy2ToolStrip.ResumeLayout(false);
+            this.fillBy2ToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoDataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoBindingSource4)).EndInit();
@@ -1258,8 +1260,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.site_infoBindingSource)).EndInit();
-            this.fillBy2ToolStrip.ResumeLayout(false);
-            this.fillBy2ToolStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
