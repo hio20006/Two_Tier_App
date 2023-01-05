@@ -19,6 +19,8 @@ namespace M11105506_two_tier
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'function_7.system_info' 資料表。您可以視需要進行移動或移除。
+            this.system_infoTableAdapter3.Fill(this.function_7.system_info);
             // TODO: 這行程式碼會將資料載入 'function_6.system_info1' 資料表。您可以視需要進行移動或移除。
             this.system_info1TableAdapter.Fill(this.function_6.system_info1);
             // TODO: 這行程式碼會將資料載入 'function_6.system_info' 資料表。您可以視需要進行移動或移除。
@@ -61,6 +63,44 @@ namespace M11105506_two_tier
             try
             {
                 this.listTableAdapter3.FillBy(this.function_5.List, new System.Nullable<int>(((int)(System.Convert.ChangeType(minToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(maxToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(listToolStripTextBox.Text, typeof(int))))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        //private void fillByToolStripButton1_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        this.system_infoTableAdapter3.FillBy(this.function_7.system_info);
+        //    }
+        //    catch (System.Exception ex)
+        //    {
+        //        System.Windows.Forms.MessageBox.Show(ex.Message);
+        //    }
+        //}
+
+        private void fillByToolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                this.system_infoTableAdapter3.FillBy(this.function_7.system_info, computer1ToolStripTextBox.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillBy2ToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.system_infoTableAdapter2.FillBy2(this.function_6.system_info, computer1ToolStripTextBox.Text);
             }
             catch (System.Exception ex)
             {
