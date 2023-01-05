@@ -70,6 +70,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Function_3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Function_4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Function_4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -116,6 +121,17 @@
     </None>
     <None Include="Function_3.xss">
       <DependentUpon>Function_3.xsd</DependentUpon>
+    </None>
+    <None Include="Function_4.xsc">
+      <DependentUpon>Function_4.xsd</DependentUpon>
+    </None>
+    <None Include="Function_4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Function_4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Function_4.xss">
+      <DependentUpon>Function_4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

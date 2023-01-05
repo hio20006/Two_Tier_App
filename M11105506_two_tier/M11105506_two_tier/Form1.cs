@@ -19,6 +19,12 @@ namespace M11105506_two_tier
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'function_4.site_info1' 資料表。您可以視需要進行移動或移除。
+            this.site_info1TableAdapter.Fill(this.function_4.site_info1);
+            // TODO: 這行程式碼會將資料載入 'function_4.List' 資料表。您可以視需要進行移動或移除。
+            this.listTableAdapter2.Fill(this.function_4.List);
+            // TODO: 這行程式碼會將資料載入 'function_4.site_info' 資料表。您可以視需要進行移動或移除。
+            this.site_infoTableAdapter.Fill(this.function_4.site_info);
             // TODO: 這行程式碼會將資料載入 'function_3.List' 資料表。您可以視需要進行移動或移除。
             this.listTableAdapter1.Fill(this.function_3.List);
             // TODO: 這行程式碼會將資料載入 'function_3.system_info' 資料表。您可以視需要進行移動或移除。

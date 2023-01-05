@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Function_4" targetNamespace="http://tempuri.org/Function_4.xsd" xmlns:mstns="http://tempuri.org/Function_4.xsd" xmlns="http://tempuri.org/Function_4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="M11105506ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="M11105506ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.M11105506_two_tier.Properties.Settings.GlobalReference.Default.M11105506ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="site_infoTableAdapter" GeneratorDataComponentClassName="site_infoTableAdapter" Name="site_info" UserDataComponentName="site_infoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="M11105506ConnectionString (Settings)" DbObjectName="M11105506.dbo.site_info" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select list,country,site,count(systemid) as computer_num from site_info
+group by list,country,site
+order by country</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="list" DataSetColumn="list" />
+              <Mapping SourceColumn="country" DataSetColumn="country" />
+              <Mapping SourceColumn="site" DataSetColumn="site" />
+              <Mapping SourceColumn="computer_num" DataSetColumn="computer_num" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="site_info1TableAdapter" GeneratorDataComponentClassName="site_info1TableAdapter" Name="site_info1" UserDataComponentName="site_info1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="M11105506ConnectionString (Settings)" DbObjectName="M11105506.dbo.site_info" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     distinct     List, Country
+FROM              site_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="List" DataSetColumn="List" />
+              <Mapping SourceColumn="Country" DataSetColumn="Country" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ListTableAdapter" GeneratorDataComponentClassName="ListTableAdapter" Name="List" UserDataComponentName="ListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="M11105506ConnectionString (Settings)" DbObjectName="M11105506.dbo.List" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT List
+FROM              List</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="List" DataSetColumn="List" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Function_4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Function_4" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Function_4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="site_info" msprop:Generator_RowEvHandlerName="site_infoRowChangeEventHandler" msprop:Generator_RowDeletedName="site_infoRowDeleted" msprop:Generator_RowDeletingName="site_infoRowDeleting" msprop:Generator_RowEvArgName="site_infoRowChangeEvent" msprop:Generator_TablePropName="site_info" msprop:Generator_RowChangedName="site_infoRowChanged" msprop:Generator_RowChangingName="site_infoRowChanging" msprop:Generator_TableClassName="site_infoDataTable" msprop:Generator_RowClassName="site_infoRow" msprop:Generator_TableVarName="tablesite_info" msprop:Generator_UserTableName="site_info">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="list" msprop:Generator_ColumnPropNameInRow="list" msprop:Generator_ColumnPropNameInTable="listColumn" msprop:Generator_ColumnVarNameInTable="columnlist" msprop:Generator_UserColumnName="list" type="xs:int" minOccurs="0" />
+              <xs:element name="country" msprop:Generator_ColumnPropNameInRow="country" msprop:Generator_ColumnPropNameInTable="countryColumn" msprop:Generator_ColumnVarNameInTable="columncountry" msprop:Generator_UserColumnName="country" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="site" msprop:Generator_ColumnPropNameInRow="site" msprop:Generator_ColumnPropNameInTable="siteColumn" msprop:Generator_ColumnVarNameInTable="columnsite" msprop:Generator_UserColumnName="site" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="computer_num" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="computer_num" msprop:Generator_ColumnPropNameInTable="computer_numColumn" msprop:Generator_ColumnVarNameInTable="columncomputer_num" msprop:Generator_UserColumnName="computer_num" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="site_info1" msprop:Generator_RowEvHandlerName="site_info1RowChangeEventHandler" msprop:Generator_RowDeletedName="site_info1RowDeleted" msprop:Generator_RowDeletingName="site_info1RowDeleting" msprop:Generator_RowEvArgName="site_info1RowChangeEvent" msprop:Generator_TablePropName="site_info1" msprop:Generator_RowChangedName="site_info1RowChanged" msprop:Generator_RowChangingName="site_info1RowChanging" msprop:Generator_TableClassName="site_info1DataTable" msprop:Generator_RowClassName="site_info1Row" msprop:Generator_TableVarName="tablesite_info1" msprop:Generator_UserTableName="site_info1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="List" msprop:Generator_ColumnPropNameInRow="List" msprop:Generator_ColumnPropNameInTable="ListColumn" msprop:Generator_ColumnVarNameInTable="columnList" msprop:Generator_UserColumnName="List" type="xs:int" minOccurs="0" />
+              <xs:element name="Country" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_UserColumnName="Country" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="List" msprop:Generator_RowEvHandlerName="ListRowChangeEventHandler" msprop:Generator_RowDeletedName="ListRowDeleted" msprop:Generator_RowDeletingName="ListRowDeleting" msprop:Generator_RowEvArgName="ListRowChangeEvent" msprop:Generator_TablePropName="List" msprop:Generator_RowChangedName="ListRowChanged" msprop:Generator_RowChangingName="ListRowChanging" msprop:Generator_TableClassName="ListDataTable" msprop:Generator_RowClassName="ListRow" msprop:Generator_TableVarName="tableList" msprop:Generator_UserTableName="List">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="List" msprop:Generator_ColumnPropNameInRow="List" msprop:Generator_ColumnPropNameInTable="ListColumn" msprop:Generator_ColumnVarNameInTable="columnList" msprop:Generator_UserColumnName="List" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="List_site_info1" msdata:parent="List" msdata:child="site_info1" msdata:parentkey="List" msdata:childkey="List" msprop:Generator_UserParentTable="List" msprop:Generator_UserChildTable="site_info1" msprop:Generator_RelationVarName="relationList_site_info1" msprop:Generator_UserRelationName="List_site_info1" msprop:Generator_ChildPropName="Getsite_info1Rows" msprop:Generator_ParentPropName="ListRow" />
+      <msdata:Relationship name="site_info1_site_info" msdata:parent="site_info1" msdata:child="site_info" msdata:parentkey="Country List" msdata:childkey="country list" msprop:Generator_UserParentTable="site_info1" msprop:Generator_UserChildTable="site_info" msprop:Generator_RelationVarName="relationsite_info1_site_info" msprop:Generator_UserRelationName="site_info1_site_info" msprop:Generator_ChildPropName="Getsite_infoRows" msprop:Generator_ParentPropName="site_info1RowParent" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
