@@ -31,3 +31,14 @@ C:\hio\Two_Tier_App_\Two_Tier_App\M11105506_two_tier\M11105506_two_tier\obj\Debu
 C:\hio\Two_Tier_App_\Two_Tier_App\M11105506_two_tier\M11105506_two_tier\obj\Debug\M11105506_two_tier.csproj.CoreCompileInputs.cache
 C:\hio\Two_Tier_App_\Two_Tier_App\M11105506_two_tier\M11105506_two_tier\obj\Debug\M11105506_two_tier.exe
 C:\hio\Two_Tier_App_\Two_Tier_App\M11105506_two_tier\M11105506_two_tier\obj\Debug\M11105506_two_tier.pdb
+C:\Users\E2-417\Desktop\M11105506\M11105506_two_tier\M11105506_two_tier\bin\Debug\M11105506_two_tier.exe.config
+C:\Users\E2-417\Desktop\M11105506\M11105506_two_tier\M11105506_two_tier\bin\Debug\M11105506_two_tier.exe
+C:\Users\E2-417\Desktop\M11105506\M11105506_two_tier\M11105506_two_tier\bin\Debug\M11105506_two_tier.pdb
+C:\Users\E2-417\Desktop\M11105506\M11105506_two_tier\M11105506_two_tier\obj\Debug\M11105506_two_tier.csproj.AssemblyReference.cache
+C:\Users\E2-417\Desktop\M11105506\M11105506_two_tier\M11105506_two_tier\obj\Debug\M11105506_two_tier.csproj.SuggestedBindingRedirects.cache
+C:\Users\E2-417\Desktop\M11105506\M11105506_two_tier\M11105506_two_tier\obj\Debug\M11105506_two_tier.Form1.resources
+C:\Users\E2-417\Desktop\M11105506\M11105506_two_tier\M11105506_two_tier\obj\Debug\M11105506_two_tier.Properties.Resources.resources
+C:\Users\E2-417\Desktop\M11105506\M11105506_two_tier\M11105506_two_tier\obj\Debug\M11105506_two_tier.csproj.GenerateResource.cache
+C:\Users\E2-417\Desktop\M11105506\M11105506_two_tier\M11105506_two_tier\obj\Debug\M11105506_two_tier.csproj.CoreCompileInputs.cache
+C:\Users\E2-417\Desktop\M11105506\M11105506_two_tier\M11105506_two_tier\obj\Debug\M11105506_two_tier.exe
+C:\Users\E2-417\Desktop\M11105506\M11105506_two_tier\M11105506_two_tier\obj\Debug\M11105506_two_tier.pdb

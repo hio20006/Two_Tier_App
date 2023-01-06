@@ -81,7 +81,7 @@ SELECT List, SystemID, Computer, Manufacturer, SiteID, Segment, Totalcores, Coun
               <Mapping SourceColumn="Country" DataSetColumn="Country" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="M11105506ConnectionString (Settings)" DbObjectName="M11105506.dbo.system_info" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+              <DbSource ConnectionRef="M11105506ConnectionString (Settings)" DbObjectName="M11105506.dbo.system_info" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_computer" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy_computer" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy_computer">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT          system_info.*
@@ -103,35 +103,35 @@ where Computer like '%'+@computer1+'%'</CommandText>
   <xs:element name="Function_7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Function_7" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Function_7">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="system_info" msprop:Generator_RowEvHandlerName="system_infoRowChangeEventHandler" msprop:Generator_RowDeletedName="system_infoRowDeleted" msprop:Generator_RowDeletingName="system_infoRowDeleting" msprop:Generator_RowEvArgName="system_infoRowChangeEvent" msprop:Generator_TablePropName="system_info" msprop:Generator_RowChangedName="system_infoRowChanged" msprop:Generator_RowChangingName="system_infoRowChanging" msprop:Generator_TableClassName="system_infoDataTable" msprop:Generator_RowClassName="system_infoRow" msprop:Generator_TableVarName="tablesystem_info" msprop:Generator_UserTableName="system_info">
+        <xs:element name="system_info" msprop:Generator_RowClassName="system_infoRow" msprop:Generator_RowEvHandlerName="system_infoRowChangeEventHandler" msprop:Generator_RowDeletedName="system_infoRowDeleted" msprop:Generator_RowDeletingName="system_infoRowDeleting" msprop:Generator_RowEvArgName="system_infoRowChangeEvent" msprop:Generator_TablePropName="system_info" msprop:Generator_RowChangedName="system_infoRowChanged" msprop:Generator_UserTableName="system_info" msprop:Generator_RowChangingName="system_infoRowChanging" msprop:Generator_TableClassName="system_infoDataTable" msprop:Generator_TableVarName="tablesystem_info">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="List" msprop:Generator_ColumnPropNameInRow="List" msprop:Generator_ColumnPropNameInTable="ListColumn" msprop:Generator_ColumnVarNameInTable="columnList" msprop:Generator_UserColumnName="List" type="xs:int" />
-              <xs:element name="SystemID" msprop:Generator_ColumnPropNameInRow="SystemID" msprop:Generator_ColumnPropNameInTable="SystemIDColumn" msprop:Generator_ColumnVarNameInTable="columnSystemID" msprop:Generator_UserColumnName="SystemID" type="xs:int" />
-              <xs:element name="Computer" msprop:Generator_ColumnPropNameInRow="Computer" msprop:Generator_ColumnPropNameInTable="ComputerColumn" msprop:Generator_ColumnVarNameInTable="columnComputer" msprop:Generator_UserColumnName="Computer" minOccurs="0">
+              <xs:element name="List" msprop:Generator_UserColumnName="List" msprop:Generator_ColumnPropNameInTable="ListColumn" msprop:Generator_ColumnPropNameInRow="List" msprop:Generator_ColumnVarNameInTable="columnList" type="xs:int" />
+              <xs:element name="SystemID" msprop:Generator_UserColumnName="SystemID" msprop:Generator_ColumnPropNameInTable="SystemIDColumn" msprop:Generator_ColumnPropNameInRow="SystemID" msprop:Generator_ColumnVarNameInTable="columnSystemID" type="xs:int" />
+              <xs:element name="Computer" msprop:Generator_UserColumnName="Computer" msprop:Generator_ColumnPropNameInTable="ComputerColumn" msprop:Generator_ColumnPropNameInRow="Computer" msprop:Generator_ColumnVarNameInTable="columnComputer" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Manufacturer" msprop:Generator_ColumnPropNameInRow="Manufacturer" msprop:Generator_ColumnPropNameInTable="ManufacturerColumn" msprop:Generator_ColumnVarNameInTable="columnManufacturer" msprop:Generator_UserColumnName="Manufacturer" minOccurs="0">
+              <xs:element name="Manufacturer" msprop:Generator_UserColumnName="Manufacturer" msprop:Generator_ColumnPropNameInTable="ManufacturerColumn" msprop:Generator_ColumnPropNameInRow="Manufacturer" msprop:Generator_ColumnVarNameInTable="columnManufacturer" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="SiteID" msprop:Generator_ColumnPropNameInRow="SiteID" msprop:Generator_ColumnPropNameInTable="SiteIDColumn" msprop:Generator_ColumnVarNameInTable="columnSiteID" msprop:Generator_UserColumnName="SiteID" type="xs:int" minOccurs="0" />
-              <xs:element name="Segment" msprop:Generator_ColumnPropNameInRow="Segment" msprop:Generator_ColumnPropNameInTable="SegmentColumn" msprop:Generator_ColumnVarNameInTable="columnSegment" msprop:Generator_UserColumnName="Segment" minOccurs="0">
+              <xs:element name="SiteID" msprop:Generator_UserColumnName="SiteID" msprop:Generator_ColumnPropNameInTable="SiteIDColumn" msprop:Generator_ColumnPropNameInRow="SiteID" msprop:Generator_ColumnVarNameInTable="columnSiteID" type="xs:int" minOccurs="0" />
+              <xs:element name="Segment" msprop:Generator_UserColumnName="Segment" msprop:Generator_ColumnPropNameInTable="SegmentColumn" msprop:Generator_ColumnPropNameInRow="Segment" msprop:Generator_ColumnVarNameInTable="columnSegment" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Totalcores" msprop:Generator_ColumnPropNameInRow="Totalcores" msprop:Generator_ColumnPropNameInTable="TotalcoresColumn" msprop:Generator_ColumnVarNameInTable="columnTotalcores" msprop:Generator_UserColumnName="Totalcores" type="xs:int" minOccurs="0" />
-              <xs:element name="Country" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_UserColumnName="Country" minOccurs="0">
+              <xs:element name="Totalcores" msprop:Generator_UserColumnName="Totalcores" msprop:Generator_ColumnPropNameInTable="TotalcoresColumn" msprop:Generator_ColumnPropNameInRow="Totalcores" msprop:Generator_ColumnVarNameInTable="columnTotalcores" type="xs:int" minOccurs="0" />
+              <xs:element name="Country" msprop:Generator_UserColumnName="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />

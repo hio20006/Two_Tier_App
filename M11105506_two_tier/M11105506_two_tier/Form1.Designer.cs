@@ -114,19 +114,6 @@
             this.systeminfo1systeminfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.label7 = new System.Windows.Forms.Label();
-            this.fillBy2ToolStrip = new System.Windows.Forms.ToolStrip();
-            this.computer1ToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.computer1ToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.fillBy2ToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.system_infoDataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.system_infoBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.system_infoBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.function_7 = new M11105506_two_tier.Function_7();
@@ -155,6 +142,19 @@
             this.system_info1TableAdapter = new M11105506_two_tier.Function_6TableAdapters.system_info1TableAdapter();
             this.system_infoTableAdapter3 = new M11105506_two_tier.Function_7TableAdapters.system_infoTableAdapter();
             this.tableAdapterManager6 = new M11105506_two_tier.Function_7TableAdapters.TableAdapterManager();
+            this.system_infoDataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fillBy_computerToolStrip = new System.Windows.Forms.ToolStrip();
+            this.computer1ToolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.computer1ToolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.fillBy_computerToolStripButton = new System.Windows.Forms.ToolStripButton();
             listLabel = new System.Windows.Forms.Label();
             systemIDLabel = new System.Windows.Forms.Label();
             listLabel1 = new System.Windows.Forms.Label();
@@ -195,8 +195,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.system_infoDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systeminfo1systeminfoBindingSource)).BeginInit();
             this.tabPage7.SuspendLayout();
-            this.fillBy2ToolStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.system_infoDataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.function_7)).BeginInit();
@@ -206,6 +204,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.site_infoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.system_infoDataGridView2)).BeginInit();
+            this.fillBy_computerToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // listLabel
@@ -726,7 +726,6 @@
             // 
             // minToolStripTextBox
             // 
-            this.minToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.minToolStripTextBox.Name = "minToolStripTextBox";
             this.minToolStripTextBox.Size = new System.Drawing.Size(100, 25);
             // 
@@ -738,7 +737,6 @@
             // 
             // maxToolStripTextBox
             // 
-            this.maxToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.maxToolStripTextBox.Name = "maxToolStripTextBox";
             this.maxToolStripTextBox.Size = new System.Drawing.Size(100, 25);
             // 
@@ -937,9 +935,9 @@
             // tabPage7
             // 
             this.tabPage7.AutoScroll = true;
-            this.tabPage7.Controls.Add(this.label7);
-            this.tabPage7.Controls.Add(this.fillBy2ToolStrip);
+            this.tabPage7.Controls.Add(this.fillBy_computerToolStrip);
             this.tabPage7.Controls.Add(this.system_infoDataGridView2);
+            this.tabPage7.Controls.Add(this.label7);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -958,108 +956,6 @@
             this.label7.Size = new System.Drawing.Size(194, 23);
             this.label7.TabIndex = 8;
             this.label7.Text = "Function_7：Other_2";
-            // 
-            // fillBy2ToolStrip
-            // 
-            this.fillBy2ToolStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.fillBy2ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.computer1ToolStripLabel,
-            this.computer1ToolStripTextBox,
-            this.fillBy2ToolStripButton});
-            this.fillBy2ToolStrip.Location = new System.Drawing.Point(5, 52);
-            this.fillBy2ToolStrip.Name = "fillBy2ToolStrip";
-            this.fillBy2ToolStrip.Size = new System.Drawing.Size(229, 25);
-            this.fillBy2ToolStrip.TabIndex = 1;
-            this.fillBy2ToolStrip.Text = "fillBy2ToolStrip";
-            // 
-            // computer1ToolStripLabel
-            // 
-            this.computer1ToolStripLabel.Name = "computer1ToolStripLabel";
-            this.computer1ToolStripLabel.Size = new System.Drawing.Size(76, 22);
-            this.computer1ToolStripLabel.Text = "Computer：";
-            // 
-            // computer1ToolStripTextBox
-            // 
-            this.computer1ToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
-            this.computer1ToolStripTextBox.Name = "computer1ToolStripTextBox";
-            this.computer1ToolStripTextBox.Size = new System.Drawing.Size(100, 25);
-            // 
-            // fillBy2ToolStripButton
-            // 
-            this.fillBy2ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillBy2ToolStripButton.Name = "fillBy2ToolStripButton";
-            this.fillBy2ToolStripButton.Size = new System.Drawing.Size(39, 22);
-            this.fillBy2ToolStripButton.Text = "FillBy";
-            this.fillBy2ToolStripButton.Click += new System.EventHandler(this.fillBy2ToolStripButton_Click);
-            // 
-            // system_infoDataGridView2
-            // 
-            this.system_infoDataGridView2.AutoGenerateColumns = false;
-            this.system_infoDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.system_infoDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn28,
-            this.dataGridViewTextBoxColumn29,
-            this.dataGridViewTextBoxColumn30,
-            this.dataGridViewTextBoxColumn31,
-            this.dataGridViewTextBoxColumn32,
-            this.dataGridViewTextBoxColumn33,
-            this.dataGridViewTextBoxColumn34});
-            this.system_infoDataGridView2.DataSource = this.system_infoBindingSource3;
-            this.system_infoDataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.system_infoDataGridView2.Location = new System.Drawing.Point(3, 80);
-            this.system_infoDataGridView2.Name = "system_infoDataGridView2";
-            this.system_infoDataGridView2.RowTemplate.Height = 24;
-            this.system_infoDataGridView2.Size = new System.Drawing.Size(786, 341);
-            this.system_infoDataGridView2.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "List";
-            this.dataGridViewTextBoxColumn27.HeaderText = "List";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "SystemID";
-            this.dataGridViewTextBoxColumn28.HeaderText = "SystemID";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "Computer";
-            this.dataGridViewTextBoxColumn29.HeaderText = "Computer";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "Manufacturer";
-            this.dataGridViewTextBoxColumn30.HeaderText = "Manufacturer";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "SiteID";
-            this.dataGridViewTextBoxColumn31.HeaderText = "SiteID";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "Segment";
-            this.dataGridViewTextBoxColumn32.HeaderText = "Segment";
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "Totalcores";
-            this.dataGridViewTextBoxColumn33.HeaderText = "Totalcores";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "Country";
-            this.dataGridViewTextBoxColumn34.HeaderText = "Country";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
             // 
             // system_infoBindingSource3
             // 
@@ -1196,6 +1092,107 @@
             this.tableAdapterManager6.system_infoTableAdapter = this.system_infoTableAdapter3;
             this.tableAdapterManager6.UpdateOrder = M11105506_two_tier.Function_7TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // system_infoDataGridView2
+            // 
+            this.system_infoDataGridView2.AutoGenerateColumns = false;
+            this.system_infoDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.system_infoDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn27,
+            this.dataGridViewTextBoxColumn28,
+            this.dataGridViewTextBoxColumn29,
+            this.dataGridViewTextBoxColumn30,
+            this.dataGridViewTextBoxColumn31,
+            this.dataGridViewTextBoxColumn32,
+            this.dataGridViewTextBoxColumn33,
+            this.dataGridViewTextBoxColumn34});
+            this.system_infoDataGridView2.DataSource = this.system_infoBindingSource4;
+            this.system_infoDataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.system_infoDataGridView2.Location = new System.Drawing.Point(3, 90);
+            this.system_infoDataGridView2.Name = "system_infoDataGridView2";
+            this.system_infoDataGridView2.RowTemplate.Height = 24;
+            this.system_infoDataGridView2.Size = new System.Drawing.Size(786, 331);
+            this.system_infoDataGridView2.TabIndex = 8;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "List";
+            this.dataGridViewTextBoxColumn27.HeaderText = "List";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "SystemID";
+            this.dataGridViewTextBoxColumn28.HeaderText = "SystemID";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "Computer";
+            this.dataGridViewTextBoxColumn29.HeaderText = "Computer";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "Manufacturer";
+            this.dataGridViewTextBoxColumn30.HeaderText = "Manufacturer";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "SiteID";
+            this.dataGridViewTextBoxColumn31.HeaderText = "SiteID";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "Segment";
+            this.dataGridViewTextBoxColumn32.HeaderText = "Segment";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "Totalcores";
+            this.dataGridViewTextBoxColumn33.HeaderText = "Totalcores";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "Country";
+            this.dataGridViewTextBoxColumn34.HeaderText = "Country";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            // 
+            // fillBy_computerToolStrip
+            // 
+            this.fillBy_computerToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillBy_computerToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.computer1ToolStripLabel1,
+            this.computer1ToolStripTextBox1,
+            this.fillBy_computerToolStripButton});
+            this.fillBy_computerToolStrip.Location = new System.Drawing.Point(7, 62);
+            this.fillBy_computerToolStrip.Name = "fillBy_computerToolStrip";
+            this.fillBy_computerToolStrip.Size = new System.Drawing.Size(285, 25);
+            this.fillBy_computerToolStrip.TabIndex = 1;
+            this.fillBy_computerToolStrip.Text = "fillBy_computerToolStrip";
+            // 
+            // computer1ToolStripLabel1
+            // 
+            this.computer1ToolStripLabel1.Name = "computer1ToolStripLabel1";
+            this.computer1ToolStripLabel1.Size = new System.Drawing.Size(72, 22);
+            this.computer1ToolStripLabel1.Text = "computer1:";
+            // 
+            // computer1ToolStripTextBox1
+            // 
+            this.computer1ToolStripTextBox1.Name = "computer1ToolStripTextBox1";
+            this.computer1ToolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            // 
+            // fillBy_computerToolStripButton
+            // 
+            this.fillBy_computerToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillBy_computerToolStripButton.Name = "fillBy_computerToolStripButton";
+            this.fillBy_computerToolStripButton.Size = new System.Drawing.Size(99, 19);
+            this.fillBy_computerToolStripButton.Text = "FillBy_computer";
+            this.fillBy_computerToolStripButton.Click += new System.EventHandler(this.fillBy_computerToolStripButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1248,9 +1245,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.systeminfo1systeminfoBindingSource)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
-            this.fillBy2ToolStrip.ResumeLayout(false);
-            this.fillBy2ToolStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.system_infoDataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.system_infoBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.function_7)).EndInit();
@@ -1260,6 +1254,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.site_infoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.system_infoDataGridView2)).EndInit();
+            this.fillBy_computerToolStrip.ResumeLayout(false);
+            this.fillBy_computerToolStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1373,6 +1370,7 @@
         private System.Windows.Forms.BindingSource system_infoBindingSource4;
         private Function_7TableAdapters.system_infoTableAdapter system_infoTableAdapter3;
         private Function_7TableAdapters.TableAdapterManager tableAdapterManager6;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView system_infoDataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
@@ -1382,11 +1380,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
-        private System.Windows.Forms.ToolStrip fillBy2ToolStrip;
-        private System.Windows.Forms.ToolStripLabel computer1ToolStripLabel;
-        private System.Windows.Forms.ToolStripTextBox computer1ToolStripTextBox;
-        private System.Windows.Forms.ToolStripButton fillBy2ToolStripButton;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ToolStrip fillBy_computerToolStrip;
+        private System.Windows.Forms.ToolStripLabel computer1ToolStripLabel1;
+        private System.Windows.Forms.ToolStripTextBox computer1ToolStripTextBox1;
+        private System.Windows.Forms.ToolStripButton fillBy_computerToolStripButton;
     }
 }
 

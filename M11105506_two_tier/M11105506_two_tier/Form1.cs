@@ -87,7 +87,7 @@ namespace M11105506_two_tier
         {
             try
             {
-                this.system_infoTableAdapter3.FillBy(this.function_7.system_info, computer1ToolStripTextBox.Text);
+                this.system_infoTableAdapter3.FillBy_computer(this.function_7.system_info, computer1ToolStripTextBox1.Text);
             }
             catch (System.Exception ex)
             {
@@ -100,7 +100,20 @@ namespace M11105506_two_tier
         {
             try
             {
-                this.system_infoTableAdapter2.FillBy2(this.function_6.system_info, computer1ToolStripTextBox.Text);
+                this.system_infoTableAdapter2.FillBy2(this.function_6.system_info, computer1ToolStripTextBox1.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillBy_computerToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.system_infoTableAdapter3.FillBy_computer(this.function_7.system_info, computer1ToolStripTextBox1.Text);
             }
             catch (System.Exception ex)
             {

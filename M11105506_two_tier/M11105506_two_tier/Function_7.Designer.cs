@@ -1102,7 +1102,7 @@ SELECT List, SystemID, Computer, Manufacturer, SiteID, Segment, Totalcores, Coun
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy(Function_7.system_infoDataTable dataTable, string computer1) {
+        public virtual int FillBy_computer(Function_7.system_infoDataTable dataTable, string computer1) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((computer1 == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
